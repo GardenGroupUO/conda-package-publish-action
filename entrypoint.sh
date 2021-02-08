@@ -23,8 +23,8 @@ build_package(){
 
 upload_package(){
     export ANACONDA_API_TOKEN=$INPUT_ANACONDATOKEN
-    anaconda upload --label main -c conda-forge linux-64/*.tar.bz2
-    anaconda upload --label main -c conda-forge osx-64/*.tar.bz2
+    anaconda upload --label main linux-64/*.tar.bz2
+    anaconda upload --label main osx-64/*.tar.bz2
 }
 
 go_to_build_dir
