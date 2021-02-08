@@ -1,7 +1,6 @@
 FROM continuumio/miniconda3:4.7.10
 
-LABEL "repository"="https://github.com/m0nhawk/conda-package-publish-action"
-LABEL "maintainer"="Andrew Prokhorenkov <andrew.prokhorenkov@gmail.com>"
+LABEL "repository"="https://github.com/GardenGroupUO/conda-package-publish-action"
 
 RUN conda install -y anaconda-client conda-build
 
